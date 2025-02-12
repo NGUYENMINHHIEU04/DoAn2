@@ -12,6 +12,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthPage from './pages/AuthPage';
 import ForgotPassword from './pages/ForgotPassword';
+import Homepage from './pages/HomePage';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/" element={<AuthPage />} />
         <Route path="/login" element={<AuthPage />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/home" element={<Homepage/>} />
       </Routes>
     </Router>
   );

@@ -1,9 +1,10 @@
-import React from 'react';
-import Sidebar from './components/Sidebar';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import MainContent from "../components/MainContent";
+import Footer from "../components/Footer";
+import MusicPlayer from "../components/MusicPlayer";
 
-function HomePage() {
+const Homepage = () => {
   return (
     <div className="flex flex-col h-screen">
       <div className="flex flex-1">
@@ -11,8 +12,9 @@ function HomePage() {
         <MainContent />
       </div>
       <Footer />
+      <MusicPlayer />
     </div>
   );
-}
+};
 
-export default HomePage;
+export default Homepage;
